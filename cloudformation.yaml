@@ -179,7 +179,7 @@ Resources:
     Type: AWS::S3::Bucket
     Properties: 
       BucketName: alfi1339pietro
-    DeletionPolicy: Retain
+    DeletionPolicy: Delete
   MyBucketPolicy:
     Type: AWS::IAM::Policy
     Properties:
@@ -202,5 +202,6 @@ Resources:
             Action: "sts:AssumeRole"
             Principal:
               Service: "ec2.amazonaws.com"
+  
 
     
